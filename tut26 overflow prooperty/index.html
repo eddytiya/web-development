@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow property</title>
+    <style>
+        .box{
+            width: 30vw;
+            height: 10vh;
+            border: 2px solid black;
+            /* implementing the aboive styles and lead to bad box and we can use overflow property to fit it */
+        overflow: auto;
+        /* using whitesapce=nowrap we caraete a scrol bar down in a staight line */
+        white-space:nowrap;
+        text-overflow: ellipsis;
+        
+        }
+    </style>
+</head>
+<body>
+  <div class="box">
+    i am a boy and i love to write Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, quos. Consequuntur commodi temporibus maxime sequi sit quia repudiandae tenetur modi id? Voluptatem voluptate a laboriosam culpa vel aspernatur rem eveniet ducimus sapiente dolorum minus dolores, iste tempora deleniti velit impedit repellat esse consequuntur error placeat!
+</div>  
+</body>
+</html>

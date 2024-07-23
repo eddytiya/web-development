@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            /* we can name grid lines as well */
+            grid-template-columns: [pahela] 120px [doosra] 100px [teesra];
+            grid-template-rows: 100px 100px 100px;
+
+        }
+        .item{
+            border: 2px solid red;
+            height: 55px;
+            width: 55px;
+        }
+        /* suppose u want no4 to come to no1 */
+        .item4{
+            grid-row: 1/2;
+            /* to occupy all the row */
+            grid-column: pahela/t;
+
+        }
+/* the above code will more item 4 to item 1 place  */
+/* but u want item 1 to overlap with item 4 and not shift do the same to item 1 as well */
+.item1{
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        /* 1/2 means it occupies columns form col1 to 2 */
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item item4">4</div>
+    <div class="item">5</div>
+  </div>  
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+
+/* declaring variables */
+:root{
+    /* root k aandar global variable hota hai  */
+    --color:blue;
+    --seccolor:rgb(174,174,222);
+}
+
+*{
+            margin: 0;
+            padding: 0;
+}
+
+ul{
+    display: flex;
+    padding: 34px;
+    
+}
+        ul li{
+            list-style: none;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim possimus et tempora, ipsam animi vel quidem, ex voluptatibus officia delectus, itaque quia praesentium dignissimos cupiditate quis. Omnis eius, modi dolorem optio aperiam mollitia? Illum esse similique animi necessitatibus commodi non cum impedit eveniet minus.
+    </div>
+</body>
+</html>

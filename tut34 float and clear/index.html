@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css float and clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+            /* using display flow root we can have the same size of the box as that of the image  */
+        }
+        .card{
+            border: 2px solid red;
+        }
+        img{
+            float: left;
+        }
+/* this prevents breakage of text */
+        .clear{
+            background-color: aqua;
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="download.jfif" alt="" width="230px">
+        <div class="card">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptatibus a expedita blanditiis excepturi harum sunt repellendus laboriosam recusandae nam, quae rerum, quod repudiandae eligendi optio ut earum adipisci? Et optio itaque inventore suscipit!card1</div>
+        <div class="card clear">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quae id voluptatem voluptate quidem blanditiis fugiat illo aspernatur. Asperiores ab tempore nisi quae officia nam commodi iusto. Repellat, optio voluptate? Molestias, sed fugiat quisquam molestiae perferendis eaque consequuntur est dolore omnis quia magni iste neque. Accusamus, vero! Expedita reprehenderit nobis delectus. Necessitatibus odit, labore repudiandae ipsam explicabo molestiae atque asperiores. Soluta nam dignissimos accusantium eveniet dolorem saepe perferendis iusto sed doloremque tenetur? Accusamus nisi harum id vero sunt magni pariatur a eius, inventore dolores, fugit, tenetur iure. Porro obcaecati corporis voluptate minima corrupti autem dolores, consectetur aliquid laboriosam id veritatis veniam, fugiat sed possimus. Voluptate placeat expedita totam dolorem eaque beatae saepe dolores vitae quo labore, doloremque inventore earum aperiam recusandae ducimus tempore quisquam nostrum, eligendi, mollitia fugit aliquam sunt in doloribus exercitationem? Libero culpa labore necessitatibus aperiam error ut ducimus aliquam iure in ipsa placeat, veniam consectetur temporibus alias obcaecati ipsum sit vitae cupiditate amet! Alias nostrum temporibus maxime asperiores. Odit inventore dignissimos dolorem, facere adipisci fugiat reiciendis! Dicta repudiandae alias laudantium optio nam, atque, praesentium cum ad omnis recusandae enim ab dolorum tempore quas magnam labore, fuga quibusdam inventore! At voluptates, architecto minus dolorum praesentium ipsa non unde modi perspiciatis dicta quibusdam nulla excepturi quo exercitationem expedita libero atque aperiam id, sint fuga maiores? Perspiciatis nostrum facilis distinctio quod aliquid?</div>
+        <div class="card">card3</div>
+    </div>
+</body>
+</html>

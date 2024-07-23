@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+            align-items: center;
+}
+
+.right ul li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 150px;
+}
+.right ul{
+    display: flex;
+    justify-self: flex-end;
+    align-items: flex-end;
+}
+.logo img{
+    width:84px;
+    height: 90px;
+}
+
+section span .firstimg{
+    width: 45px;
+    height: 15px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 70px;
+    font-family: sans-serif;
+}
+
+.first span{
+    font-size: 40px;
+}
+.first p{
+    font-size: 23px;
+    width: 44vw;
+    text-align: center;
+}
+.btn{
+    background-color: #00b6d1;
+    color: white;
+    padding : 14px 16px ;
+    border: none;
+    border-radius: 6px;
+font-weight: 700;
+}
+.green{
+background-color: green;
+}
+.flex{
+    display: flex;
+}
+.small{
+    font-size: 12px;
+}
+.second{
+    max-width: 70vw;
+    margin: auto;
+    
+}
+.item{
+    padding: 23px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+}
+
+.download img{
+    width: 60px;
+    height: 60px;
+}
+
+.download:nth-child(2){
+    font-size: 23px;
+}
